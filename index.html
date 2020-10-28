@@ -22,17 +22,12 @@
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/optiwifi.png" alt="" /></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
+                   
                     <i class="fas fa-bars ml-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
-<!--                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li> -->
-                       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#accueil">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#accueil">Accueil</a></li>
                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#tarifs">Tarifs</a></li>
                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#rdv">Rendez-vous</a></li>
@@ -52,7 +47,7 @@
         </header>
         <!-- Services-->
         <section class="page-section" id="services">
-            <div class="container">
+            <div class="container text-center">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Pourquoi nous?</h2>
                     <h3 class="section-subheading text-muted">Simplicité, transparence et efficacité</h3>
@@ -83,10 +78,11 @@
                         <p class="text-muted">Une équipe de deux techniciens experts dans l'installation et le réglage des équipements pour l'optimisation Wi-Fi. Ils mettront fin à tous vos problèmes de wifi dans quelques heures.</p>
                     </div>
                 </div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#rdv">Rendez-vous</a>
             </div>
         </section>
         <!-- Portfolio Grid--->
-        <section class="page-section bg-light d-none" id="portfolio">
+        <section class="page-section bg-light " id="portfolio">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Portfolio</h2>
@@ -181,7 +177,7 @@
             </div>
         </section>
         <!-- About-->
-        <section class="page-section d-none" id="about">
+        <section class="page-section " id="about">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">About</h2>
@@ -243,7 +239,7 @@
             </div>
         </section>
         <!-- Team-->
-        <section class="page-section bg-light d-none" id="team">
+        <section class="page-section bg-light " id="team">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
@@ -287,7 +283,7 @@
             </div>
         </section>
         <!-- Clients-->
-        <div class="py-5 d-none">
+        <div class="py-5 ">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-6 my-3">
@@ -306,38 +302,48 @@
             </div>
         </div>
         <!-- Contact-->
+
+
+<!--         <form action="https://formspree.io/f/xyybjyaj" method="POST">
+            <input type="text" name="name">
+            <input type="email" name="_replyto">
+            <input type="submit" value="Send">
+          </form> -->
+
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Nous contacter</h2>
+                    <h3 class="section-subheading text-white">C'est le moyen le plus rapide de nous contacter. Laissez-nous un bref message et l'heure de votre préférence et nous vous contacterons à l'heure que vous aurez choisie.</h3>
                 </div>
-                <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                <!-- <form id="contactForm" name="sentMessage" novalidate="novalidate" action="https://formspree.io/f/xyybjyaj" method="post">
+                     -->
+                     <form id="sentMessage" name="sentMessage" action="https://formspree.io/f/xyybjyaj" method="POST">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
+                                <input class="form-control" id="name" type="text" placeholder="Votre Prénom *" required="required" data-validation-required-message="Veuillez entrer votre prénom svp." />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address." />
+                                <input class="form-control" id="email" type="email" name="_replyto" placeholder="Votre Email *" required="required" data-validation-required-message="Veuillez entrer votre adresse de courrier électronique svp." />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group mb-md-0">
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." />
+                                <input class="form-control" id="phone" type="tel" placeholder="Votre téléphone *" required="required" data-validation-required-message="Veuillez entrer votre numéro de téléphone svp." />
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
-                                <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder="Votre message *" required="required" data-validation-required-message="Veuillez entrer votre message svp."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                     </div>
                     <div class="text-center">
                         <div id="success"></div>
-                        <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button>
+                        <button class="btn btn-primary btn-xl text-uppercase"  type="submit">Envoyer Message</button>
                     </div>
                 </form>
             </div>
