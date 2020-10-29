@@ -39,6 +39,7 @@
         </nav>
         <!-- Masthead-->
         <header class="masthead" id="accueil">
+            <div class="overlay"></div>
             <div class="container">
                 <div class="masthead-subheading" >Fatigué de voir votre Wi-Fi coupé?</div>
                 <div class="masthead-heading text-uppercase">Nos professionnels prennent soin de vous</div>
@@ -302,27 +303,17 @@
             </div>
         </div>
         <!-- Contact-->
-
-
-<!--         <form action="https://formspree.io/f/xyybjyaj" method="POST">
-            <input type="text" name="name">
-            <input type="email" name="_replyto">
-            <input type="submit" value="Send">
-          </form> -->
-
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Nous contacter</h2>
                     <h3 class="section-subheading text-white">C'est le moyen le plus rapide de nous contacter. Laissez-nous un bref message et l'heure de votre préférence et nous vous contacterons à l'heure que vous aurez choisie.</h3>
                 </div>
-                <!-- <form id="contactForm" name="sentMessage" novalidate="novalidate" action="https://formspree.io/f/xyybjyaj" method="post">
-                     -->
                      <form id="sentMessage" name="sentMessage" action="https://formspree.io/f/xyybjyaj" method="POST">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input class="form-control" id="name" type="text" placeholder="Votre Prénom *" required="required" data-validation-required-message="Veuillez entrer votre prénom svp." />
+                                <input class="form-control" id="name" name="_name" type="text" placeholder="Votre Prénom *" required="required" data-validation-required-message="Veuillez entrer votre prénom svp." />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
@@ -330,7 +321,7 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group mb-md-0">
-                                <input class="form-control" id="phone" type="tel" placeholder="Votre téléphone *" required="required" data-validation-required-message="Veuillez entrer votre numéro de téléphone svp." />
+                                <input class="form-control" id="phone" name="_phone" type="tel" placeholder="Votre téléphone *" required="required" data-validation-required-message="Veuillez entrer votre numéro de téléphone svp." />
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
