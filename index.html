@@ -570,13 +570,13 @@
             })();
         </script>
       -->
-      <!-- Load Stripe.js on your website. -->
+   <!-- Load Stripe.js on your website. -->
 <script src="https://js.stripe.com/v3"></script>
 
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
 <button
   style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-  id="checkout-button-price_1HbWx1DU8E6zoNrN1DGr1sAL"
+  id="checkout-button-price_1HiP4IDU8E6zoNrNwPiEugps"
   role="link"
   type="button"
 >
@@ -587,14 +587,14 @@
 
 <script>
 (function() {
-  var stripe = Stripe('pk_live_51HbWAyDU8E6zoNrNPP3OjJJ3j6ccTEwVR3HLchsWyMJbtP7s6DYzqDdeb9Hdy8pkWG8Rv8FeK3kuZuJD30iD8ROh00ZC0e00oL');
+  var stripe = Stripe('pk_test_51HbWAyDU8E6zoNrNRI2FlcovIpfgrzi0bCvnmGk1971g1390db9WUUvh3grAFokGstFaBZozhHRLoTOpGP4s1c2a00GObL8vm7');
 
-  var checkoutButton = document.getElementById('checkout-button-price_1HbWx1DU8E6zoNrN1DGr1sAL');
+  var checkoutButton = document.getElementById('checkout-button-price_1HiP4IDU8E6zoNrNwPiEugps');
   checkoutButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
-      lineItems: [{price: 'price_1HbWx1DU8E6zoNrN1DGr1sAL', quantity: 1}],
+      lineItems: [{price: 'price_1HiP4IDU8E6zoNrNwPiEugps', quantity: 1}],
       mode: 'payment',
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
@@ -615,7 +615,6 @@
   });
 })();
 </script>
-
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
