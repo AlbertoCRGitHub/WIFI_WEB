@@ -135,8 +135,8 @@
         // a successful payment.
         // Instead use one of the strategies described in
         // https://stripe.com/docs/payments/checkout/fulfill-orders
-        successUrl: window.location.protocol + 'https://optiwifi.netlify.app/Succes',
-        cancelUrl: window.location.protocol + 'https://optiwifi.netlify.app/Error',
+        successUrl: window.location.protocol + 'optiwifi.netlify.app/Succes',
+        cancelUrl: window.location.protocol + 'optiwifi.netlify.app/Error',
       })
       .then(function (result) {
         if (result.error) {
