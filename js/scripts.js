@@ -145,7 +145,34 @@
 
 
 /****Modal2****/   
-
+(function() {
+    var stripe = Stripe('pk_live_51HbWAyDU8E6zoNrNPP3OjJJ3j6ccTEwVR3HLchsWyMJbtP7s6DYzqDdeb9Hdy8pkWG8Rv8FeK3kuZuJD30iD8ROh00ZC0e00oL');
+  
+    var checkoutButton = document.getElementById('checkout-button-price_1HiLURDU8E6zoNrNavVSVNeT');
+    checkoutButton.addEventListener('click', function () {
+      // When the customer clicks on the button, redirect
+      // them to Checkout.
+      stripe.redirectToCheckout({
+        lineItems: [{price: 'price_1HiLURDU8E6zoNrNavVSVNeT', quantity: 1}],
+        mode: 'payment',
+        // Do not rely on the redirect to the successUrl for fulfilling
+        // purchases, customers may not always reach the success_url after
+        // a successful payment.
+        // Instead use one of the strategies described in
+        // https://stripe.com/docs/payments/checkout/fulfill-orders
+        successUrl: window.location.protocol + '//www.vyacable.ca/success',
+        cancelUrl: window.location.protocol + '//www.vyacable.ca/canceled',
+      })
+      .then(function (result) {
+        if (result.error) {
+          // If `redirectToCheckout` fails due to a browser or network
+          // error, display the localized error message to your customer.
+          var displayError = document.getElementById('error-message');
+          displayError.textContent = result.error.message;
+        }
+      });
+    });
+  })();
 
 /****Modal3****/    
 (function() {
