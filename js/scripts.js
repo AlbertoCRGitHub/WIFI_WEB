@@ -155,18 +155,12 @@
       stripe.redirectToCheckout({
         lineItems: [{price: 'price_1HiLURDU8E6zoNrNavVSVNeT', quantity: 1}],
         mode: 'payment',
-        // Do not rely on the redirect to the successUrl for fulfilling
-        // purchases, customers may not always reach the success_url after
-        // a successful payment.
-        // Instead use one of the strategies described in
-        // https://stripe.com/docs/payments/checkout/fulfill-orders
-        successUrl: window.location.protocol + '//www.vyacable.ca/success',
-        cancelUrl: window.location.protocol + '//www.vyacable.ca/canceled',
+        successUrl: window.location.protocol + '//optiwifi.netlify.app/Succes',
+        cancelUrl: window.location.protocol + '//optiwifi.netlify.app/Error',
       })
       .then(function (result) {
         if (result.error) {
-          // If `redirectToCheckout` fails due to a browser or network
-          // error, display the localized error message to your customer.
+
           var displayError = document.getElementById('error-message');
           displayError.textContent = result.error.message;
         }
