@@ -1,3 +1,5 @@
+
+
 /*!
     * Start Bootstrap - Agency v6.0.2 (https://startbootstrap.com/template-overviews/agency)
     * Copyright 2013-2020 Start Bootstrap
@@ -53,4 +55,111 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+
+     
+        
+//Calculatrice
+    $( "#calculatrice" ).submit(function( event ) {
+        event.preventDefault();
+    });
+    $("#calculer").click(function(){
+        var etage = $("#etage").val();
+        var place = $("#position").val();
+        var persons = $('#quantite').val();
+
+        if (etage == 1) {
+            
+            var total = persons;
+            muestra(total);
+            
+        } else if (etage == 2){
+            
+            var total = persons * 2;
+            muestra(total);
+
+        }else{
+            if (place == 1){
+                var total = 2 * persons ;
+                muestra(total);
+            }else{
+              
+                        var total = "la madre";
+                        danger();
+               
+             
+            }       
+        };
+     function muestra(total){
+        $(".container__recommandation").addClass("recommandation__visible");
+        var textArea = $("#recommandation").text("Vous avez besoin d'un minimum de: \n " + total + " Mbps \n de vitesse de internet pour éviter les coupures et les ralentissements de votre Wi-Fi"); 
+      }
+      function danger(){
+        $(".container__recommandation").addClass("recommandation__visible");
+        var textArea = $("#recommandation").text("Vous besoin relocaliser votre routeur vers le Rez-de-Chaussée ou demander un rende-vous pour optimiser votre Wi-Fi");
+      }
+
+      /** Checkout */
+      /* (function() {
+        var stripe = Stripe('pk_live_51HbWAyDU8E6zoNrNPP3OjJJ3j6ccTEwVR3HLchsWyMJbtP7s6DYzqDdeb9Hdy8pkWG8Rv8FeK3kuZuJD30iD8ROh00ZC0e00oL');
+    
+        var checkoutButton = document.getElementById('checkout-button-price_1HbWx1DU8E6zoNrN1DGr1sAL');
+        
+        
+        checkoutButton.addEventListener('click', function () {
+            // When the customer clicks on the button, redirect
+            // them to Checkout.
+            stripe.redirectToCheckout({
+            lineItems: [{price: 'price_1HbWx1DU8E6zoNrN1DGr1sAL', quantity: 1}],
+            mode: 'payment',
+            // Do not rely on the redirect to the successUrl for fulfilling
+            // purchases, customers may not always reach the success_url after
+            // a successful payment.
+            // Instead use one of the strategies described in
+            // https://stripe.com/docs/payments/checkout/fulfill-orders
+            successUrl: 'https://excheckout.netlify.app/succes',
+            cancelUrl: 'https://excheckout.netlify.app/error',
+            })
+            
+            .then(function (result) {
+            if (result.error) {
+                // If `redirectToCheckout` fails due to a browser or network
+                // error, display the localized error message to your customer.
+                var displayError = document.getElementById('error-message');
+                displayError.textContent = result.error.message;
+            }
+            });
+        });
+        })(); */
+
+
+
+   
+    });
+      
+
+    /* console.log(etage);
+console.log(place);
+console.log(persons); */
+
+
+
 })(jQuery); // End of use strict
+
+//click to call function
+
+/* 
+    function calculateForfait() {
+        var etage = document.getElementById("fetage").value;
+       
+      
+        console.log(etage);
+
+    }
+    $( "#calculatrice" ).submit(function( event ) {
+        event.preventDefault();
+    });
+        document.getElementById("calculer").onclick = function() {
+            calculateForfait();
+        
+        }; */

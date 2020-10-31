@@ -9,6 +9,8 @@
         <link rel="icon" type="image/x-icon" href="assets/img/favicon2.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+       <!-- Stripe chekout-->
+        <script src="https://js.stripe.com/v3/"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
@@ -28,10 +30,14 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#accueil">Accueil</a></li>
-                       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#tarifs">Tarifs</a></li>
-                       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#rdv">Rendez-vous</a></li>
-                       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#conseils">Conseils</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Rendez-vous</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#conseils">Calculatrice-OW</a></li>
+
+                       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#appareils">Appareils</a></li>
+                       
+                    
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -43,15 +49,35 @@
             <div class="container">
                 <div class="masthead-subheading" >Fatigué de voir votre Wi-Fi coupé?</div>
                 <div class="masthead-heading text-uppercase">Nos professionnels prennent soin de vous</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#rdv">Rendez-vous</a>
+               <!--  <a id="puto" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Rendez-vous</a> -->
+           
             </div>
         </header>
-        <!-- Services-->
+
+
+
+                                             <!-- Stripe chekout-->
+ <script src="https://js.stripe.com/v3/"></script>
+ <button
+ style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+ 
+ id="checkout-button-price_1HbWx1DU8E6zoNrN1DGr1sAL"
+ role="link"
+ type="button"
+ >
+ Checkout
+ </button>
+
+ <div id="error-message"></div> <!-- Stripe chekout-->
+
+
+ 
+        <!-- Pourquoi?-->
         <section class="page-section" id="services">
             <div class="container text-center">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Pourquoi nous?</h2>
-                    <h3 class="section-subheading text-muted">Simplicité, transparence et efficacité</h3>
+                    <h3 class="section-subheading text-muted">Qualité, transparence et garantie</h3>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
@@ -79,109 +105,123 @@
                         <p class="text-muted">Une équipe de deux techniciens experts dans l'installation et le réglage des équipements pour l'optimisation Wi-Fi. Ils mettront fin à tous vos problèmes de wifi dans quelques heures.</p>
                     </div>
                 </div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#rdv">Rendez-vous</a>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Rendez-vous</a>
             </div>
         </section>
-        <!-- Portfolio Grid--->
-        <section class="page-section bg-light d-none" id="portfolio">
+         <!-- Team-->
+         <section class="page-section bg-light " id="team">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Notre équipe de spécialistes</h2>
+                    <h3 class="section-subheading text-muted">Les professionnels les plus préparés dans leur domaine, pour vous fournir un service de la plus haute qualité.</h3>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Threads</div>
-                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
-                            </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/12.jpg" alt="" />
+                            <h4>Alberto el Maja</h4>
+                            <p class="text-muted">Tecnico escapao en esas tallas de internet</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/02-thumbnail.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Explore</div>
-                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
-                            </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/22.jpg" alt="" />
+                            <h4>Yuri Muelle Viejo</h4>
+                            <p class="text-muted">Especialista de ventas al por menor y menudeo</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/04-thumbnail.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Lines</div>
-                                <div class="portfolio-caption-subheading text-muted">Branding</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/05-thumbnail.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Southwest</div>
-                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/06-thumbnail.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Window</div>
-                                <div class="portfolio-caption-subheading text-muted">Photography</div>
-                            </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/32.jpg" alt="" />
+                            <h4>Vladimir la Manta</h4>
+                            <p class="text-muted">El muelero mayor del equipo</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Avec une formation spécialisée et de nombreuses années d'expérience dans l'optimisation du WiFi ... Nos professionnels se feront un plaisir de répondre à toutes vos questions.</p></div>
+                </div>
             </div>
         </section>
-        <!-- About-->
-        <section class="page-section d-none" id="about">
-            <div class="container">
+        <!-- Conseil-->
+        <section class="page-section " id="conseils">
+            <div class="container  w-50 ">
+                <div class="text-center pt-3">
+                    <h2 class="section-heading text-uppercase">Calculatrice Opti Wi-fi</h2>
+                    <h3 class="section-subheading text-muted">Mon forfait Internet est-il adapté à mes besoins?</h3>
+                </div>
+                <form id="calculatrice" >
+
+                  <div class="row   ">
+                    <div class="col-25 text-lg-center ">
+                      <label for="etage">Étage(s) chez vous:</label>
+                    </div>
+                    <div class="col-25 ">
+                      <!-- <input type="text" id="fname" name="firstname" placeholder="Your name.."> -->
+                      <select id="etage" name="etage" placeholder="Étages de la maison">
+                        <option value="1">1 Étage (Ex. Condo, App)</option>
+                        <option value="2">2 Étages (Ex. Bungalow...)</option>
+                        <option value="3">3 Étages et plus (Ex. Maison..)</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-25 text-lg-center">
+                      <label for="position">Votre router est: </label>
+                    </div>
+                    <div class="col-25 ">
+                      <!-- <input type="text" id="lposition" name="position" placeholder="Your last name.."> -->
+                      <select id="position" name="position" placeholder="Position du router..">
+                        <option value="1">au Rez-de-Chaussée</option>
+                        <option value="2">au Premier Étage</option>
+                        <option value="2">au Sous-sol</option>
+                        <!-- <option value="3">Autre (Ex. Garage..)</option> -->
+
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25 text-lg-center">
+                      <label for="quantite">Combien d'internautes chez vous?</label>
+                    </div>
+                    <div class="col-25">
+                      <select id="quantite" name="quantite">
+                        <option value="15">1</option>
+                        <option value="30">2</option>
+                        <option value="45">3</option>
+                        <option value="60">4</option>
+                        <option value="75">5 ou plus</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row text-lg-center container__recommandation">
+                    <div class="col-25 ">
+                      <label for="recommandation">Recommandation:</label>
+                    </div>
+                    <div class="col-25 ">
+                      <textarea class="text-center" id="recommandation" name="recommandation" style="height:150px"></textarea>
+                    </div>
+                  </div>
+                  <div class="row pb-3">
+                    <input class="mt-3 btn-xl text-uppercase" id="calculer" type="submit" value="Calculer">
+                   
+                  </div>
+                </form>
+              </div>
+              <!--container end-->
+           <!--  <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h2 class="section-heading text-uppercase">Conseils</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
                 <ul class="timeline">
@@ -237,52 +277,61 @@
                         </div>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </section>
-        <!-- Team-->
-        <section class="page-section bg-light " id="team">
+        <!-- appareils --->
+        <section class="page-section bg-light " id="appareils">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Notre équipe de spécialistes</h2>
-                    <h3 class="section-subheading text-muted">Les professionnels les plus préparés dans leur domaine, pour vous fournir un service de la plus haute qualité.</h3>
+                    <h2 class="section-heading text-uppercase">Nos appareils</h2>
+                    <h3 class="section-subheading text-muted">Tous nos appareils sont conformes a la Canadian Standards Association (CSA). Et avec 5 ans de garantie.</h3>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/12.jpg" alt="" />
-                            <h4>Alberto el Maja</h4>
-                            <p class="text-muted">Tecnico escapao en esas tallas de internet</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="appareils-item">
+                            <a class="appareils-link" data-toggle="modal" href="#appareilsModal1">
+                                <div class="appareils-hover">
+                                    <div class="appareils-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/appareils/400_Interieur_.jpg" alt="UniFi HD Access Point" />
+                            </a>
+                            <div class="appareils-caption">
+                                <div class="appareils-caption-heading">UniFi HD Access Point (UAP-AC-HD)</div>
+                                <div class="appareils-caption-subheading text-muted">High-performance 802.11ac wave 2 access point with 4x4 MU-MIMO technology</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/22.jpg" alt="" />
-                            <h4>Yuri Muelle Viejo</h4>
-                            <p class="text-muted">Especialista de ventas al por menor y menudeo</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="appareils-item">
+                            <a class="appareils-link" data-toggle="modal" href="#appareilsModal2">
+                                <div class="appareils-hover">
+                                    <div class="appareils-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/appareils/400._AC_SL1500_.jpg" alt="Unifi Mesh Access Point (UAP-AC-M-US)" />
+                            </a>
+                            <div class="appareils-caption">
+                                <div class="appareils-caption-heading">Unifi Mesh Access Point (UAP-AC-M-US)</div>
+                                <div class="appareils-caption-subheading text-muted">High-performance 802.11ac 2x2 MIMO access point</div><br/>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/32.jpg" alt="" />
-                            <h4>Vladimir la Manta</h4>
-                            <p class="text-muted">El muelero mayor del equipo</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="appareils-item">
+                            <a class="appareils-link" data-toggle="modal" href="#appareilsModal3">
+                                <div class="appareils-hover">
+                                    <div class="appareils-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/appareils/400_switch_.jpg" alt="UniFi Switch (US-8-60W)" />
+                            </a>
+                            <div class="appareils-caption">
+                                <div class="appareils-caption-heading">UniFi Switch (US-8-60W)</div>
+                                <div class="appareils-caption-subheading text-muted">Fully managed 802.3af PoE Gigabit switch </div> <br/>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-                </div>
+                </div> 
             </div>
-        </section>
+        </section>     
         <!-- Clients-->
         <div class="py-5 ">
             <div class="container">
@@ -343,7 +392,7 @@
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-left">Copyright © Your Website 2020</div>
+                    <div class="col-lg-4 text-lg-left">Copyright © AlbertoCR 2020</div>
                     <div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
@@ -356,9 +405,9 @@
                 </div>
             </div>
         </footer>
-        <!-- Portfolio Modals-->
+        <!-- appareils Modals-->
         <!-- Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="appareils-modal modal fade" id="appareilsModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -366,20 +415,45 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/01-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Threads</li>
-                                        <li>Category: Illustration</li>
+                                    <!-- UniFi HD Access Point-->
+                                    <h2 class="text-uppercase">UniFi HD Access Point</h2>
+                                    <p class="item-intro text-muted">(UAP-AC-HD)</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/appareils/12_.jpg" alt="UniFi HD Access Point" />
+                                    <p class="text-left">High-performance 802.11ac wave 2 access point with 4x4 MU-MIMO technology for high-density and performance-critical applications.<br/><br/>Build your Wi-Fi network with the UniFi HD Access Point, part of the Ubiquiti Networks UniFi Enterprise Wi-Fi System. The UAP-AC-HD, is an indoor/outdoor, high-performance, 802.11AC Wave 2 dual-band access point, capable of throughput speeds of up to 2533 Mbps and a maximum range of up to 122 meters. Engineered from the ground up to take advantage of 802.11AC Wave 2, the UAP-AC-HD provides unparalleled multi-user support.</p>
+                                    <h4 class="text-uppercase">Works with UniFi Protect Software</h4>
+                                    <ul class="list-inline ">
+                                        <li>Manage Your Networks from a Single Control Plane</li>
+                                        <li>Intuitive and Robust Configuration, Control and Monitoring</li>
+                                        <li>Remote Firmware Upgrade</li>
+                                        <li>Users and Guests</li>
+                                        <li>Guest Portal/Hotspot Support</li>
                                     </ul>
+
+
+
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Fermer
                                     </button>
+                                    <button class="btn btn-primary btn__achat" data-dismiss="modal" type="button">
+                                        <i class="fas fa-shopping-cart mr-1"></i>
+                                        Acheter
+                                    </button>
+
+
+                                     <!-- Stripe chekout-->
+ <script src="https://js.stripe.com/v3/"></script>
+                                    <button
+                                    style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                                    
+                                    id="checkout-button-price_1HbWx1DU8E6zoNrN1DGr1sAL"
+                                    role="link"
+                                    type="button"
+                                    >
+                                    Checkout
+                                    </button>
+                        
+                                    <div id="error-message"></div> <!-- Stripe chekout-->
                                 </div>
                             </div>
                         </div>
@@ -388,7 +462,7 @@
             </div>
         </div>
         <!-- Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="appareils-modal modal fade" id="appareilsModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -396,19 +470,27 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/02-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Explore</li>
-                                        <li>Category: Graphic Design</li>
+                                    <!-- Mesh-->
+                                    <h2 class="text-uppercase">UniFi Mesh Access point</h2>
+                                    <p class="item-intro text-muted">(UAP-AC-M)</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/appareils/2_.jpg" alt="UniFi Mesh Access point (UAP-AC-M-US)" />
+                                    <p class="text-left">High-performance 802.11ac 2x2 MIMO access point for indoor and outdoor installations. Two RP-SMA connectors support external antennas.<br/><br/>
+                                     Expand your Wi-Fi network outdoors with the UniFi AC Mesh Access Point, part of the Ubiquiti Networks UniFi Enterprise Wi-Fi System. The UAP-AC-M is a high-performance, outdoor, 2x2 MIMO, 802.11ac dual-band access point, capable of speeds of up to 1167 Mbps. It features two RP-SMA connectors, which can be used with the included dual-band omni-directional antennas, or with an optional connectorized dual-band antenna for customized pattern shaping.</p>
+                                     <h4 class="text-uppercase">Works with UniFi Protect Software</h4>
+                                     <ul class="list-inline ">
+                                        <li>Manage Your Networks from a Single Control Plane</li>
+                                        <li>Intuitive and Robust Configuration, Control and Monitoring</li>
+                                        <li>Remote Firmware Upgrade</li>
+                                        <li>Users and Guests</li>
+                                        <li>Guest Portal/Hotspot Support</li>
                                     </ul>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Fermer
+                                    </button>
+                                    <button class="btn btn-primary btn__achat" data-dismiss="modal" type="button">
+                                        <i class="fas fa-shopping-cart mr-1"></i>
+                                        Acheter
                                     </button>
                                 </div>
                             </div>
@@ -418,7 +500,7 @@
             </div>
         </div>
         <!-- Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="appareils-modal modal fade" id="appareilsModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -427,108 +509,25 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/03-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Finish</li>
-                                        <li>Category: Identity</li>
+                                    <h2 class="text-uppercase">UniFi Switch</h2>
+                                    <p class="item-intro text-muted">(US-8-60W)</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/appareils/3_.jpg" alt="UniFi Switch" />
+                                    <p class="text-left">Expand and power your network with the UniFi Switch 8 60W, part of the Ubiquiti Networks UniFi Enterprise System. The UniFi Switch 8 60W is a compact, fully managed 802.3af PoE Gigabit switch, delivering robust performance and intelligent switching for enterprise networks. The UniFi Switch 8 60W offers the flexibility of (8) Gigabit Ethernet ports with (4) auto-sensing PoE ports to power your UniFi access points and other PoE devices. The UniFi Switch 8 60W supports up to 8 Gbps total, non-blocking line rate, and up to 15W output per PoE port.</p>
+                                    <h4 class="text-uppercase">Features:</h4>
+                                    <ul class="list-inline ">
+                                        <li>(8) Gigabit Ethernet Ports</li>
+                                        <li>(4) Auto-Sensing IEEE 802.3af PoE Ports</li>
+                                        <li>8 Gbps Total, Non-Blocking Line Rate</li>
+                                        <li>60W AC/DC Power Adapter Included</li>
+                                        <li>Managed by UniFi Controller</li>
                                     </ul>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Fermer
                                     </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/04-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Lines</li>
-                                        <li>Category: Branding</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/05-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Southwest</li>
-                                        <li>Category: Website Design</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/06-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Window</li>
-                                        <li>Category: Photography</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                    <button class="btn btn-primary btn__achat" data-dismiss="modal" type="button">
+                                        <i class="fas fa-shopping-cart mr-1"></i>
+                                        Acheter
                                     </button>
                                 </div>
                             </div>
@@ -538,6 +537,42 @@
             </div>
         </div>
         <!-- Bootstrap core JS-->
+        <script>
+            (function() {
+            var stripe = Stripe('pk_live_51HbWAyDU8E6zoNrNPP3OjJJ3j6ccTEwVR3HLchsWyMJbtP7s6DYzqDdeb9Hdy8pkWG8Rv8FeK3kuZuJD30iD8ROh00ZC0e00oL');
+        
+            var checkoutButton = document.getElementById('checkout-button-price_1HbWx1DU8E6zoNrN1DGr1sAL');
+            
+            
+            checkoutButton.addEventListener('click', function () {
+                // When the customer clicks on the button, redirect
+                // them to Checkout.
+                stripe.redirectToCheckout({
+                lineItems: [{price: 'price_1HbWx1DU8E6zoNrN1DGr1sAL', quantity: 1}],
+                mode: 'payment',
+                // Do not rely on the redirect to the successUrl for fulfilling
+                // purchases, customers may not always reach the success_url after
+                // a successful payment.
+                // Instead use one of the strategies described in
+                // https://stripe.com/docs/payments/checkout/fulfill-orders
+                successUrl: 'https://excheckout.netlify.app/succes',
+                cancelUrl: 'https://excheckout.netlify.app/error',
+                })
+                
+                .then(function (result) {
+                if (result.error) {
+                    // If `redirectToCheckout` fails due to a browser or network
+                    // error, display the localized error message to your customer.
+                    var displayError = document.getElementById('error-message');
+                    displayError.textContent = result.error.message;
+                }
+                });
+            });
+            })();
+        </script>
+     
+
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
@@ -545,7 +580,11 @@
         <!-- Contact form JS-->
         <script src="assets/mail/jqBootstrapValidation.js"></script>
         <script src="assets/mail/contact_me.js"></script>
+
+       
+       
+
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+       <!--  <script src="js/scripts.js"></script> -->
     </body>
 </html>
