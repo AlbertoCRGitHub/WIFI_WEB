@@ -55,15 +55,7 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
-
-
-
-
-
-
-
      
-        
 //Calculatrice
     $( "#calculatrice" ).submit(function( event ) {
         event.preventDefault();
@@ -88,11 +80,9 @@
                 var total = 2 * persons ;
                 muestra(total);
             }else{
-              
-                        var total = "la madre";
-                        danger();
-               
-             
+
+                var total = "la madre";
+                danger();
             }       
         };
      function muestra(total){
@@ -103,18 +93,7 @@
         $(".container__recommandation").addClass("recommandation__visible");
         var textArea = $("#recommandation").text("Vous besoin relocaliser votre routeur vers le Rez-de-Chaussée ou demander un rende-vous pour optimiser votre Wi-Fi");
       }
-
-      
-     
-
-
-
-
     });
-      
-
-
-
 
 })(jQuery); // End of use strict
 
