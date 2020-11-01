@@ -135,12 +135,12 @@
         </section>
         <!-- Conseil-->
         <section class="page-section " id="conseils">
-            <div class="container  w-50 ">
+            <div class="container calc">
                 <div class="text-center pt-3">
                     <h2 class="section-heading text-uppercase">Calculatrice Opti Wi-fi</h2>
                     <h3 class="section-subheading text-muted">Mon forfait Internet est-il adapté à mes besoins?</h3>
                 </div>
-                <form id="calculatrice" >
+                <form id="calculatrice " >
 
                   <div class="row   ">
                     <div class="col-25 text-lg-center ">
@@ -455,59 +455,13 @@
             </div>
         </div>
         <!-- Bootstrap core JS-->
-       <!--  <script>
-            (function() {
-            var stripe = Stripe('pk_live_51HbWAyDU8E6zoNrNPP3OjJJ3j6ccTEwVR3HLchsWyMJbtP7s6DYzqDdeb9Hdy8pkWG8Rv8FeK3kuZuJD30iD8ROh00ZC0e00oL');
-        
-            var checkoutButton = document.getElementById('checkout-button-price_1HbWx1DU8E6zoNrN1DGr1sAL');
-            
-            
-            checkoutButton.addEventListener('click', function () {
-                // When the customer clicks on the button, redirect
-                // them to Checkout.
-                stripe.redirectToCheckout({
-                lineItems: [{price: 'price_1HbWx1DU8E6zoNrN1DGr1sAL', quantity: 1}],
-                mode: 'payment',
-                // Do not rely on the redirect to the successUrl for fulfilling
-                // purchases, customers may not always reach the success_url after
-                // a successful payment.
-                // Instead use one of the strategies described in
-                // https://stripe.com/docs/payments/checkout/fulfill-orders
-                successUrl: 'https://excheckout.netlify.app/succes',
-                cancelUrl: 'https://excheckout.netlify.app/error',
-                })
-                
-                .then(function (result) {
-                if (result.error) {
-                    // If `redirectToCheckout` fails due to a browser or network
-                    // error, display the localized error message to your customer.
-                    var displayError = document.getElementById('error-message');
-                    displayError.textContent = result.error.message;
-                }
-                });
-            });
-            })();
-        </script>
-      -->
-<!-- Load Stripe.js on your website. -->
-
-
-<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-
-
-
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Contact form JS-->
         <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
-
-       
-       
-
+        <!-- <script src="assets/mail/contact_me.js"></script> -->
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script> 
     </body>
