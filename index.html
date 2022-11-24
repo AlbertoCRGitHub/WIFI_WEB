@@ -1,440 +1,514 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        
-        <title>OptiWifi</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon2.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-        <script src="https://js.stripe.com/v3"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-xl navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/optiwifi.png" alt="" /></a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                   
-                    <i class="fas fa-bars ml-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#accueil">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Rendez-vous</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#conseils">Calculatrice-OW</a></li>
 
-                       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#appareils">Appareils</a></li>
-                       
-                    
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead" id="accueil">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="masthead-subheading" >Votre Internet est-il lent ou instable ?</div>
-                <div class="masthead-heading text-uppercase">Nos professionnels prennent soin de vous</div>
-             </div>
-        </header>
-        <!-- Pourquoi?-->
-        <section class="page-section" id="services">
-            <div class="container text-center">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Pourquoi nous?</h2>
-                    <h3 class="section-subheading text-muted pt-3">Après de nombreuses années d'expériences, une excellente formation technique et de nombreuses recherches sur le Wi-Fi. Nous nous sentons prêts à partager nos connaissances et nos expériences acquises au fil des ans avec ceux qui en ont besoin. <br/><br/>
-                        C'est pourquoi nous avons décidé de fonder cet enterprise dédié à l'optimisation et installation des réseaux Wi-Fi commerciaux et résidentiels.<br/><br/>
-                        Notre promesse est: qualité, transparence et garantie de nos services.<br/><br/>
-                        N'hésitez pas à nous contacter et commencez à profiter pleinement des avantages et de la puissance d'un réseau Wi-Fi optimisé.</h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-headset fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Premier contact</h4><br/>
-                        <p class="text-muted">Par email ou téléphone, nos professionnels collecteront les informations nécessaires pour identifier votre problème Wi-Fi, ou simplement pour parler de votre projet.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-clipboard fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Visite d'un expert</h4><br/>
-                        <p class="text-muted">La visite sera effectuée par l'un de nos professionnels les plus qualifiés. Le but est de planifier les travaux pour donner un montant exact du coût des travaux et de l'équipement.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-tools fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Installation et optimisation Wi-Fi</h4>
-                        <p class="text-muted">Une équipe de deux techniciens experts dans l'installation et le réglage des équipements pour l'optimisation Wi-Fi. Ils mettront fin à tous vos problèmes de wifi dans quelques heures.</p>
-                    </div>
-                </div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Rendez-vous</a>
-            </div>
-        </section>
-         <!-- Team-->
-         <section class="page-section bg-light " id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Notre équipe de spécialistes</h2>
-                    <h3 class="section-subheading text-muted">Les professionnels les plus préparés dans leur domaine, pour vous fournir un service de la plus haute qualité.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/12.jpg" alt="" />
-                            <h4>Alberto. <br/>Directeur général</h4><br/>
-                            <p class="text-muted">Avec un Bac en Génie de la production automatisé;
-                                et plus de 15 ans d'expériences dans le monde des technologies. Nous pouvons vous assurer que votre projet est entre de bonnes mains.</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/22.jpg" alt="" />
-                            <h4>Yuriel. <br/>Directeur technique Rive sud</h4>
-                            <p class="text-muted">Avec un AEC en Développement de sites Web et plus de 10 ans d'expérience comment technicien en câblodistribution. Il est la bonne personne pour faire ce travail</p><br/>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/32.jpg" alt="" />
-                            <h4>Vladimir. <br/>Directeur technique Montréal.</h4>
-                            <p class="text-muted">Avec un DEP en télécommunications, plus de 5 ans d'expérience comment technicien en câblodistribution et 15 ans comment professionnel de jeux vidéo. Il sait apprécier la qualité d'un réseau Wi-Fi optimisé. </p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Avec une formation spécialisée et de nombreuses années d'expérience dans l'optimisation du WiFi ... Nos professionnels se feront un plaisir de répondre à toutes vos questions.</p></div>
-                </div>
-            </div>
-        </section>
-        <!-- Conseil-->
-        <section class="page-section " id="conseils">
-            <div class="container calc asa">
-                <div class="text-center pt-3">
-                    <h2 class="section-heading text-uppercase">Calculatrice Opti Wi-fi</h2>
-                    <h3 class="section-subheading text-muted">Mon forfait Internet est-il adapté à mes besoins?</h3>
-                </div>
-                <form id="calculatrice " >
-                  <div class="row   ">
-                    <div class="col-25 text-lg-center ">
-                      <label for="etage">Étage(s) chez vous:</label>
-                    </div>
-                    <div class="col-25 ">
-                      <!-- <input type="text" id="fname" name="firstname" placeholder="Your name.."> -->
-                      <select id="etage" name="etage" placeholder="Étages de la maison">
-                        <option value="1">1 Étage (Ex. Condo, App)</option>
-                        <option value="2">2 Étages (Ex. Bungalow...)</option>
-                        <option value="3">3 Étages et plus (Ex. Maison..)</option>
-                      </select>
-                    </div>
-                  </div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
 
-                  <div class="row">
-                    <div class="col-25 text-lg-center">
-                      <label for="position">Votre router est: </label>
-                    </div>
-                    <div class="col-25 ">
-                      <!-- <input type="text" id="lposition" name="position" placeholder="Your last name.."> -->
-                      <select id="position" name="position" placeholder="Position du router..">
-                        <option value="1">au Rez-de-Chaussée</option>
-                        <option value="2">au Premier Étage</option>
-                        <option value="2">au Sous-sol</option>
-                        <!-- <option value="3">Autre (Ex. Garage..)</option> -->
-                      </select>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-25 text-lg-center">
-                      <label for="quantite">Combien d'internautes chez vous?</label>
-                    </div>
-                    <div class="col-25">
-                      <select id="quantite" name="quantite">
-                        <option value="15">1</option>
-                        <option value="30">2</option>
-                        <option value="45">3</option>
-                        <option value="60">4</option>
-                        <option value="75">5 ou plus</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="row text-lg-center container__recommandation">
-                    <div class="col-25 ">
-                      <label for="recommandation">Recommandation:</label>
-                    </div>
-                    <div class="col-25 ">
-                      <textarea class="text-center" id="recommandation" name="recommandation" style="height:150px"></textarea>
-                    </div>
-                  </div>
-                  <div class="row pb-3">
-                    <!-- <input class="mt-3 btn btn-primary btn-xl text-uppercase" id="calculer" value="Calculer"> -->
-                    <a id="calculer" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" style="color:#fff; margin-top:25px">Calculer</a>
-                  </div>
-                </form>
-              </div>
-        </section>
-        <!-- appareils --->
-        <section class="page-section bg-light " id="appareils">
-            <div class="container">
-                <div class="text-center">
-                    <div id="error-message"></div>
-                    <h2 class="section-heading text-uppercase">Nos appareils</h2>
-                    <h3 class="section-subheading text-muted">Tous nos appareils sont conformes a la Canadian Standards Association (CSA). Et avec 5 ans de garantie.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="appareils-item">
-                            <a class="appareils-link" data-toggle="modal" href="#appareilsModal1">
-                                <div class="appareils-hover">
-                                    <div class="appareils-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/appareils/400_Interieur_.jpg" alt="UniFi HD Access Point" />
-                            </a>
-                            <div class="appareils-caption">
-                                <div class="appareils-caption-heading">UniFi HD Access Point (UAP-AC-HD)</div>
-                                <div class="appareils-caption-subheading text-muted">High-performance 802.11ac wave 2 access point with 4x4 MU-MIMO technology</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="appareils-item">
-                            <a class="appareils-link" data-toggle="modal" href="#appareilsModal2">
-                                <div class="appareils-hover">
-                                    <div class="appareils-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/appareils/400._AC_SL1500_.jpg" alt="Unifi Mesh Access Point (UAP-AC-M-US)" />
-                            </a>
-                            <div class="appareils-caption">
-                                <div class="appareils-caption-heading">Unifi Mesh Access Point (UAP-AC-M-US)</div>
-                                <div class="appareils-caption-subheading text-muted">High-performance 802.11ac 2x2 MIMO access point</div><br/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="appareils-item">
-                            <a class="appareils-link" data-toggle="modal" href="#appareilsModal3">
-                                <div class="appareils-hover">
-                                    <div class="appareils-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/appareils/400_switch_.jpg" alt="UniFi Switch (US-8-60W)" />
-                            </a>
-                            <div class="appareils-caption">
-                                <div class="appareils-caption-heading">UniFi Switch (US-8-60W)</div>
-                                <div class="appareils-caption-subheading text-muted">Fully managed 802.3af PoE Gigabit switch </div> <br/>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </section>     
-        <!-- Clients-->
-        <div class="py-5 ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/envato.jpg" alt="" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/designmodo.jpg" alt="" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/themeforest.jpg" alt="" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/creative-market.jpg" alt="" /></a>
-                    </div>
-                </div>
+    <title>OptiWifi</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon2.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://js.stripe.com/v3"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/optiwifi.png" alt="" /></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <i class="fas fa-bars ml-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Rendez-vous</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#conseils">Calculatrice-OW</a></li>
+
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#appareils">Appareils</a></li>
+
+
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
-        <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Nous contacter</h2>
-                    <h3 class="section-subheading text-white">C'est le moyen le plus rapide de nous contacter. Laissez-nous un bref message et l'heure de votre préférence et nous vous contacterons à l'heure que vous aurez choisie.</h3>
-                </div>
-                     <form id="sentMessage" name="sentMessage" action="https://formspree.io/f/xyybjyaj" method="POST">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input class="form-control" id="name" name="_name" type="text" placeholder="Votre Prénom *" required="required" data-validation-required-message="Veuillez entrer votre prénom svp." />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" id="email" type="email" name="_replyto" placeholder="Votre Email *" required="required" data-validation-required-message="Veuillez entrer votre adresse de courrier électronique svp." />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <input class="form-control" id="phone" name="_phone" type="tel" placeholder="Votre téléphone *" required="required" data-validation-required-message="Veuillez entrer votre numéro de téléphone svp." />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <textarea class="form-control" id="message" name="message" placeholder="Votre message *" required="required" data-validation-required-message="Veuillez entrer votre message svp."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <div id="success"></div>
-                        <button class="btn btn-primary btn-xl text-uppercase"  type="submit">Envoyer Message</button>
-                    </div>
-                </form>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead" id="accueil">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="masthead-subheading">Votre Internet est-il lent ou instable ?</div>
+            <div class="masthead-heading text-uppercase">Nos professionnels prennent soin de vous</div>
+        </div>
+    </header>
+    <!-- Pourquoi?-->
+    <section class="page-section" id="services">
+        <div class="container text-center">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Pourquoi nous?</h2>
+                <h3 class="section-subheading text-muted pt-3">Après de nombreuses années d'expériences, une excellente
+                    formation technique et de nombreuses recherches sur le Wi-Fi. Nous nous sentons prêts à partager nos
+                    connaissances et nos expériences acquises au fil des ans avec ceux qui en ont besoin. <br /><br />
+                    C'est pourquoi nous avons décidé de fonder cet enterprise dédié à l'optimisation et installation des
+                    réseaux Wi-Fi commerciaux et résidentiels.<br /><br />
+                    Notre promesse est: qualité, transparence et garantie de nos services.<br /><br />
+                    N'hésitez pas à nous contacter et commencez à profiter pleinement des avantages et de la puissance
+                    d'un réseau Wi-Fi optimisé.</h3>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-left">Copyright © AlbertoCR 2020</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-headset fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Premier contact</h4><br />
+                    <p class="text-muted">Par email ou téléphone, nos professionnels collecteront les informations
+                        nécessaires pour identifier votre problème Wi-Fi, ou simplement pour parler de votre projet.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-clipboard fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Visite d'un expert</h4><br />
+                    <p class="text-muted">La visite sera effectuée par l'un de nos professionnels les plus qualifiés. Le
+                        but est de planifier les travaux pour donner un montant exact du coût des travaux et de
+                        l'équipement.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-tools fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Installation et optimisation Wi-Fi</h4>
+                    <p class="">Une équipe de deux techniciens experts dans l'installation et le réglage des
+                        équipements pour l'optimisation Wi-Fi. Ils mettront fin à tous vos problèmes de wifi dans
+                        quelques heures.</p>
+                </div>
+            </div>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Rendez-vous</a>
+        </div>
+    </section>
+    <!-- Team-->
+    <section class="page-section bg-light " id="team">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Notre équipe de spécialistes</h2>
+                <h3 class="section-subheading text-muted">Les professionnels les plus préparés dans leur domaine, pour
+                    vous fournir un service de la plus haute qualité.</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/12.jpg" alt="" />
+                        <h4>Alberto. <br />Directeur général</h4><br />
+                        <p class="text-muted">Avec un Bac en Génie de la production automatisé;
+                            et plus de 15 ans d'expériences dans le monde des technologies. Nous pouvons vous assurer
+                            que votre projet est entre de bonnes mains.</p>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <div class="col-lg-4 text-lg-right">
-                        <a class="mr-3" href="#!">Privacy Policy</a>
-                        <a href="#!">Terms of Use</a>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/22.jpg" alt="" />
+                        <h4>Yuriel. <br />Directeur technique Rive sud</h4>
+                        <p class="text-muted">Avec un AEC en Développement de sites Web et plus de 10 ans d'expérience
+                            comment technicien en câblodistribution. Il est la bonne personne pour faire ce travail</p>
+                        <br />
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/32.jpg" alt="" />
+                        <h4>Vladimir. <br />Directeur technique Montréal.</h4>
+                        <p class="text-muted">Avec un DEP en télécommunications, plus de 5 ans d'expérience comment
+                            technicien en câblodistribution et 15 ans comment professionnel de jeux vidéo. Il sait
+                            apprécier la qualité d'un réseau Wi-Fi optimisé. </p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- appareils Modals-->
-        <!-- Modal 1-->
-        <div class="appareils-modal modal fade" id="appareilsModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- UniFi HD Access Point-->
-                                    <h2 class="text-uppercase">UniFi HD Access Point</h2>
-                                    <p class="item-intro text-muted">(UAP-AC-HD)</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/appareils/12_.jpg" alt="UniFi HD Access Point" />
-                                    <p class="text-left">High-performance 802.11ac wave 2 access point with 4x4 MU-MIMO technology for high-density and performance-critical applications.<br/><br/>Build your Wi-Fi network with the UniFi HD Access Point, part of the Ubiquiti Networks UniFi Enterprise Wi-Fi System. The UAP-AC-HD, is an indoor/outdoor, high-performance, 802.11AC Wave 2 dual-band access point, capable of throughput speeds of up to 2533 Mbps and a maximum range of up to 122 meters. Engineered from the ground up to take advantage of 802.11AC Wave 2, the UAP-AC-HD provides unparalleled multi-user support.</p>
-                                    <h4 class="text-uppercase">Works with UniFi Protect Software</h4>
-                                    <ul class="list-inline ">
-                                        <li>Manage Your Networks from a Single Control Plane</li>
-                                        <li>Intuitive and Robust Configuration, Control and Monitoring</li>
-                                        <li>Remote Firmware Upgrade</li>
-                                        <li>Users and Guests</li>
-                                        <li>Guest Portal/Hotspot Support</li>
-                                    </ul>
-                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Fermer
-                                    </button>
-                                    <button id="checkout-button-price_1HiLSxDU8E6zoNrNkdmOMmod" class="btn btn-primary btn__achat" data-dismiss="modal" type="button">
-                                        <i class="fas fa-shopping-cart mr-1"></i>
-                                        Acheter
-                                    </button>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="large text-muted">Avec une formation spécialisée et de nombreuses années d'expérience dans
+                        l'optimisation du WiFi ... Nos professionnels se feront un plaisir de répondre à toutes vos
+                        questions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Conseil-->
+    <section class="page-section " id="conseils">
+        <div class="container calc asa">
+            <div class="text-center pt-3">
+                <h2 class="section-heading text-uppercase">Calculatrice Opti Wi-fi</h2>
+                <h3 class="section-subheading text-muted">Mon forfait Internet est-il adapté à mes besoins?</h3>
+            </div>
+            <form id="calculatrice ">
+                <div class="row   ">
+                    <div class="col-25 text-lg-center ">
+                        <label for="etage">Étage(s) chez vous:</label>
+                    </div>
+                    <div class="col-25 ">
+                        <!-- <input type="text" id="fname" name="firstname" placeholder="Your name.."> -->
+                        <select id="etage" name="etage" placeholder="Étages de la maison">
+                            <option value="1">1 Étage (Ex. Condo, App)</option>
+                            <option value="2">2 Étages (Ex. Bungalow...)</option>
+                            <option value="3">3 Étages et plus (Ex. Maison..)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25 text-lg-center">
+                        <label for="position">Votre router est: </label>
+                    </div>
+                    <div class="col-25 ">
+                        <!-- <input type="text" id="lposition" name="position" placeholder="Your last name.."> -->
+                        <select id="position" name="position" placeholder="Position du router..">
+                            <option value="1">au Rez-de-Chaussée</option>
+                            <option value="2">au Premier Étage</option>
+                            <option value="2">au Sous-sol</option>
+                            <!-- <option value="3">Autre (Ex. Garage..)</option> -->
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25 text-lg-center">
+                        <label for="quantite">Combien d'internautes chez vous?</label>
+                    </div>
+                    <div class="col-25">
+                        <select id="quantite" name="quantite">
+                            <option value="15">1</option>
+                            <option value="30">2</option>
+                            <option value="45">3</option>
+                            <option value="60">4</option>
+                            <option value="75">5 ou plus</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row text-lg-center container__recommandation">
+                    <div class="col-25 ">
+                        <label for="recommandation">Recommandation:</label>
+                    </div>
+                    <div class="col-25 ">
+                        <textarea class="text-center" id="recommandation" name="recommandation"
+                            style="height:150px"></textarea>
+                    </div>
+                </div>
+                <div class="row pb-3">
+                    <!-- <input class="mt-3 btn btn-primary btn-xl text-uppercase" id="calculer" value="Calculer"> -->
+                    <a id="calculer" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
+                        style="color:#fff; margin-top:25px">Calculer</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- appareils --->
+    <section class="page-section bg-light " id="appareils">
+        <div class="container">
+            <div class="text-center">
+                <div id="error-message"></div>
+                <h2 class="section-heading text-uppercase">Nos appareils</h2>
+                <h3 class="section-subheading text-muted">Tous nos appareils sont conformes a la Canadian Standards
+                    Association (CSA). Et avec 5 ans de garantie.</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="appareils-item">
+                        <a class="appareils-link" data-toggle="modal" href="#appareilsModal1">
+                            <div class="appareils-hover">
+                                <div class="appareils-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/appareils/400_Interieur_.jpg"
+                                alt="UniFi HD Access Point" />
+                        </a>
+                        <div class="appareils-caption">
+                            <div class="appareils-caption-heading">UniFi HD Access Point (UAP-AC-HD)</div>
+                            <div class="appareils-caption-subheading text-muted">High-performance 802.11ac wave 2 access
+                                point with 4x4 MU-MIMO technology</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="appareils-item">
+                        <a class="appareils-link" data-toggle="modal" href="#appareilsModal2">
+                            <div class="appareils-hover">
+                                <div class="appareils-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/appareils/400._AC_SL1500_.jpg"
+                                alt="Unifi Mesh Access Point (UAP-AC-M-US)" />
+                        </a>
+                        <div class="appareils-caption">
+                            <div class="appareils-caption-heading">Unifi Mesh Access Point (UAP-AC-M-US)</div>
+                            <div class="appareils-caption-subheading text-muted">High-performance 802.11ac 2x2 MIMO
+                                access point</div><br />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="appareils-item">
+                        <a class="appareils-link" data-toggle="modal" href="#appareilsModal3">
+                            <div class="appareils-hover">
+                                <div class="appareils-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/appareils/400_switch_.jpg"
+                                alt="UniFi Switch (US-8-60W)" />
+                        </a>
+                        <div class="appareils-caption">
+                            <div class="appareils-caption-heading">UniFi Switch (US-8-60W)</div>
+                            <div class="appareils-caption-subheading text-muted">Fully managed 802.3af PoE Gigabit
+                                switch </div> <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients-->
+    <div class="py-5 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/envato.jpg" alt="" /></a>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/designmodo.jpg"
+                            alt="" /></a>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/themeforest.jpg"
+                            alt="" /></a>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/creative-market.jpg"
+                            alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Nous contacter</h2>
+                <h3 class="section-subheading text-white">C'est le moyen le plus rapide de nous contacter. Laissez-nous
+                    un bref message et l'heure de votre préférence et nous vous contacterons à l'heure que vous aurez
+                    choisie.</h3>
+            </div>
+            <form id="sentMessage" name="sentMessage" action="https://formspree.io/f/xyybjyaj" method="POST">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" id="name" name="_name" type="text" placeholder="Votre Prénom *"
+                                required="required"
+                                data-validation-required-message="Veuillez entrer votre prénom svp." />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="email" type="email" name="_replyto"
+                                placeholder="Votre Email *" required="required"
+                                data-validation-required-message="Veuillez entrer votre adresse de courrier électronique svp." />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <input class="form-control" id="phone" name="_phone" type="tel"
+                                placeholder="Votre téléphone *" required="required"
+                                data-validation-required-message="Veuillez entrer votre numéro de téléphone svp." />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <textarea class="form-control" id="message" name="message" placeholder="Votre message *"
+                                required="required"
+                                data-validation-required-message="Veuillez entrer votre message svp."></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div id="success"></div>
+                    <button class="btn btn-primary btn-xl text-uppercase" type="submit">Envoyer Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-left">Copyright © AlbertoCR 2020</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-right">
+                    <a class="mr-3" href="#!">Privacy Policy</a>
+                    <a href="#!">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- appareils Modals-->
+    <!-- Modal 1-->
+    <div class="appareils-modal modal fade" id="appareilsModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- UniFi HD Access Point-->
+                                <h2 class="text-uppercase">UniFi HD Access Point</h2>
+                                <p class="item-intro text-muted">(UAP-AC-HD)</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/appareils/12_.jpg"
+                                    alt="UniFi HD Access Point" />
+                                <p class="text-left">High-performance 802.11ac wave 2 access point with 4x4 MU-MIMO
+                                    technology for high-density and performance-critical applications.<br /><br />Build
+                                    your Wi-Fi network with the UniFi HD Access Point, part of the Ubiquiti Networks
+                                    UniFi Enterprise Wi-Fi System. The UAP-AC-HD, is an indoor/outdoor,
+                                    high-performance, 802.11AC Wave 2 dual-band access point, capable of throughput
+                                    speeds of up to 2533 Mbps and a maximum range of up to 122 meters. Engineered from
+                                    the ground up to take advantage of 802.11AC Wave 2, the UAP-AC-HD provides
+                                    unparalleled multi-user support.</p>
+                                <h4 class="text-uppercase">Works with UniFi Protect Software</h4>
+                                <ul class="list-inline ">
+                                    <li>Manage Your Networks from a Single Control Plane</li>
+                                    <li>Intuitive and Robust Configuration, Control and Monitoring</li>
+                                    <li>Remote Firmware Upgrade</li>
+                                    <li>Users and Guests</li>
+                                    <li>Guest Portal/Hotspot Support</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>
+                                    Fermer
+                                </button>
+                                <button id="checkout-button-price_1HiLSxDU8E6zoNrNkdmOMmod"
+                                    class="btn btn-primary btn__achat" data-dismiss="modal" type="button">
+                                    <i class="fas fa-shopping-cart mr-1"></i>
+                                    Acheter
+                                </button>
 
 
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal 2-->
-        <div class="appareils-modal modal fade" id="appareilsModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Mesh-->
-                                    <h2 class="text-uppercase">UniFi Mesh Access point</h2>
-                                    <p class="item-intro text-muted">(UAP-AC-M)</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/appareils/2_.jpg" alt="UniFi Mesh Access point (UAP-AC-M-US)" />
-                                    <p class="text-left">High-performance 802.11ac 2x2 MIMO access point for indoor and outdoor installations. Two RP-SMA connectors support external antennas.<br/><br/>
-                                     Expand your Wi-Fi network outdoors with the UniFi AC Mesh Access Point, part of the Ubiquiti Networks UniFi Enterprise Wi-Fi System. The UAP-AC-M is a high-performance, outdoor, 2x2 MIMO, 802.11ac dual-band access point, capable of speeds of up to 1167 Mbps. It features two RP-SMA connectors, which can be used with the included dual-band omni-directional antennas, or with an optional connectorized dual-band antenna for customized pattern shaping.</p>
-                                     <h4 class="text-uppercase">Works with UniFi Protect Software</h4>
-                                     <ul class="list-inline ">
-                                        <li>Manage Your Networks from a Single Control Plane</li>
-                                        <li>Intuitive and Robust Configuration, Control and Monitoring</li>
-                                        <li>Remote Firmware Upgrade</li>
-                                        <li>Users and Guests</li>
-                                        <li>Guest Portal/Hotspot Support</li>
-                                    </ul>
-                                    <button  class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Fermer
-                                    </button>
-                                    <button id="checkout-button-price_1HiLURDU8E6zoNrNavVSVNeT" class="btn btn-primary btn__achat" data-dismiss="modal" type="button">
-                                        <i class="fas fa-shopping-cart mr-1"></i>
-                                        Acheter
-                                    </button>
-                                </div>
+    </div>
+    <!-- Modal 2-->
+    <div class="appareils-modal modal fade" id="appareilsModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Mesh-->
+                                <h2 class="text-uppercase">UniFi Mesh Access point</h2>
+                                <p class="item-intro text-muted">(UAP-AC-M)</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/appareils/2_.jpg"
+                                    alt="UniFi Mesh Access point (UAP-AC-M-US)" />
+                                <p class="text-left">High-performance 802.11ac 2x2 MIMO access point for indoor and
+                                    outdoor installations. Two RP-SMA connectors support external antennas.<br /><br />
+                                    Expand your Wi-Fi network outdoors with the UniFi AC Mesh Access Point, part of the
+                                    Ubiquiti Networks UniFi Enterprise Wi-Fi System. The UAP-AC-M is a high-performance,
+                                    outdoor, 2x2 MIMO, 802.11ac dual-band access point, capable of speeds of up to 1167
+                                    Mbps. It features two RP-SMA connectors, which can be used with the included
+                                    dual-band omni-directional antennas, or with an optional connectorized dual-band
+                                    antenna for customized pattern shaping.</p>
+                                <h4 class="text-uppercase">Works with UniFi Protect Software</h4>
+                                <ul class="list-inline ">
+                                    <li>Manage Your Networks from a Single Control Plane</li>
+                                    <li>Intuitive and Robust Configuration, Control and Monitoring</li>
+                                    <li>Remote Firmware Upgrade</li>
+                                    <li>Users and Guests</li>
+                                    <li>Guest Portal/Hotspot Support</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>
+                                    Fermer
+                                </button>
+                                <button id="checkout-button-price_1HiLURDU8E6zoNrNavVSVNeT"
+                                    class="btn btn-primary btn__achat" data-dismiss="modal" type="button">
+                                    <i class="fas fa-shopping-cart mr-1"></i>
+                                    Acheter
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal 3-->
-        <div class="appareils-modal modal fade" id="appareilsModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">UniFi Switch</h2>
-                                    <p class="item-intro text-muted">(US-8-60W)</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/appareils/3_.jpg" alt="UniFi Switch" />
-                                    <p class="text-left">Expand and power your network with the UniFi Switch 8 60W, part of the Ubiquiti Networks UniFi Enterprise System. The UniFi Switch 8 60W is a compact, fully managed 802.3af PoE Gigabit switch, delivering robust performance and intelligent switching for enterprise networks. The UniFi Switch 8 60W offers the flexibility of (8) Gigabit Ethernet ports with (4) auto-sensing PoE ports to power your UniFi access points and other PoE devices. The UniFi Switch 8 60W supports up to 8 Gbps total, non-blocking line rate, and up to 15W output per PoE port.</p>
-                                    <h4 class="text-uppercase">Features:</h4>
-                                    <ul class="list-inline ">
-                                        <li>(8) Gigabit Ethernet Ports</li>
-                                        <li>(4) Auto-Sensing IEEE 802.3af PoE Ports</li>
-                                        <li>8 Gbps Total, Non-Blocking Line Rate</li>
-                                        <li>60W AC/DC Power Adapter Included</li>
-                                        <li>Managed by UniFi Controller</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Fermer
-                                    </button>
-                                    <button id="checkout-button-price_1HiLVmDU8E6zoNrN2pP4PSHg"   class="btn btn-primary btn__achat" data-dismiss="modal" type="button">
-                                        <i class="fas fa-shopping-cart mr-1"></i>
-                                        Acheter
-                                    </button>
-                     <!--                <button
+    </div>
+    <!-- Modal 3-->
+    <div class="appareils-modal modal fade" id="appareilsModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">UniFi Switch</h2>
+                                <p class="item-intro text-muted">(US-8-60W)</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/appareils/3_.jpg"
+                                    alt="UniFi Switch" />
+                                <p class="text-left">Expand and power your network with the UniFi Switch 8 60W, part of
+                                    the Ubiquiti Networks UniFi Enterprise System. The UniFi Switch 8 60W is a compact,
+                                    fully managed 802.3af PoE Gigabit switch, delivering robust performance and
+                                    intelligent switching for enterprise networks. The UniFi Switch 8 60W offers the
+                                    flexibility of (8) Gigabit Ethernet ports with (4) auto-sensing PoE ports to power
+                                    your UniFi access points and other PoE devices. The UniFi Switch 8 60W supports up
+                                    to 8 Gbps total, non-blocking line rate, and up to 15W output per PoE port.</p>
+                                <h4 class="text-uppercase">Features:</h4>
+                                <ul class="list-inline ">
+                                    <li>(8) Gigabit Ethernet Ports</li>
+                                    <li>(4) Auto-Sensing IEEE 802.3af PoE Ports</li>
+                                    <li>8 Gbps Total, Non-Blocking Line Rate</li>
+                                    <li>60W AC/DC Power Adapter Included</li>
+                                    <li>Managed by UniFi Controller</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>
+                                    Fermer
+                                </button>
+                                <button id="checkout-button-price_1HiLVmDU8E6zoNrN2pP4PSHg"
+                                    class="btn btn-primary btn__achat" data-dismiss="modal" type="button">
+                                    <i class="fas fa-shopping-cart mr-1"></i>
+                                    Acheter
+                                </button>
+                                <!--                <button
                                     style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
                                     
                                     role="link"
@@ -442,27 +516,28 @@
                                   >
                                     Checkout
                                   </button> -->
-                                    
-                                   
-                                  
 
 
-                                </div>
+
+
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script> 
-    </body>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
