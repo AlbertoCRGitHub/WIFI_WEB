@@ -10672,3 +10672,6 @@ section#contact form#sentMessage :-ms-input-placeholder {
   }
 }
 
+#team {
+  display: none;
+}
